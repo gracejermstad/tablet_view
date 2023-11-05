@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Pets</title>
+</head>
+<body>
+    <div class="skip">
+        <a href = "" >Skip to Main Content</a>
+    </div>
+    <header>
+        <h1>Pets</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+    <main id="main"> 
+        <div>
+            <h2>Jax</h2>
+            <div class="pet-info">
+            <img src="images/Jax.jpg" 
+            alt="A black and white kitten sitting down and wearing a yellow collar." width="400"/>
+            <p> Jax is a kitten, about five months old that I found this summer at a gas station while traveling to Marquette, Michigan. He was scared and malnourished, crying in the parking lot. I took him with me and after some healthy meals and a trip to the vet he is doing great!</P>
+            <p> My roommates and I just recently moved and Jax has been having a hard time getting used to the large house since we were previously living in a small apartment. Jax is incredibly playful and loves to run around, but when he is sleepy he is happy to be held. </p>
+            <h3>Photo Gallery</h3>
+            </div>
+        </div>
+        <div class="photo-gallery">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="images/JaxandMax.jpg" 
+                     alt="Black and white kitten standing on the driver’s arm while on a road trip." width="200"/>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/JaxHarlowLake.jpg" 
+                    alt="Black and white kitten on a leash standing on a rock above a lake. " width = "200"/>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/JaxSleeping.jpg" 
+                    alt="Black and white kitten sleeping on a windowsill." width="200"/>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/JaxDashboard.jpg" 
+                    alt="Black and white kitten lying on the dashboard of a car while crossing the Mackinac Bridge." width="200"/>
+                </div>
+                <button class="carousel-button carousel-prev">&#8249;</button>
+                <button class="carousel-button carousel-next">&#8250;</button>
+               <script>
+                    const slides = document.querySelectorAll('.carousel-slide');
+                    let currentSlide = 0;
+                
+                     function showSlide(n) {
+                    slides[currentSlide].style.display = 'none';
+                    currentSlide = (n + slides.length) % slides.length;
+                    slides[currentSlide].style.display = 'block';
+                    }
+                
+                 document.querySelector('.carousel-prev').addEventListener('click', () => {
+                    showSlide(currentSlide - 1);
+                    });
+                
+                 document.querySelector('.carousel-next').addEventListener('click', () => {
+                    showSlide(currentSlide + 1);
+                 });
+                
+                 // Automatically transition to the next slide every few seconds
+                    setInterval(() => {
+                    showSlide(currentSlide + 1);
+                 }, 5000); // Change slides every 5 seconds (adjust as needed)
+                </script>
+            </div>
+        </div>
+            <h3>Likes</h3> <ul>
+                <li>Toys</li>
+                <li>Going outside</li>
+                <li>Attention</li>
+            </ul>
+            <!-- Grace Jermstad -->
+        <div>
+            <h2>Cheeto (Chicken)</h2>
+
+            <img src="images/cheeto_cattree.jpg" 
+            alt="Orange cat hanging paws off a cat tower" width="400"/>
+            <p> Cheeto is a cat who likes to eat a lot and play a lot. He has an obsession with his grandpa (human) and tries to get outside every single day. If he isn’t causing problems, he is usually hiding in a seven foot tall cat tree and sleeping.</P>
+            <p>Another name for Cheeto is Chicken, because sometimes he sits very scrunched up and ends up looking like a rotisserie chicken. He was nicknamed this by one of his friends, and now he understands it as his own name. He is about six years old and still acts like a younger cat, despite being middle-aged. 
+            <h3>Photo Gallery</h3>
+        </div>
+        <div class="photo-gallery">
+            <div class="carousel-container1">
+                <div class="carousel-slide1">
+                    <img src="images/cheeto_carpet.jpg" 
+                    alt="Cheeto laying sideways on the carpet." width="200"/>
+                </div>
+                <div class="carousel-slide1">
+                    <img src="images/cheeto_moon.jpg" 
+                     alt="Cheeto lying in the sun in a half moon crescent shape" width="200"/>
+                </div>
+                <div class="carousel-slide1">
+                    <img src="images/cheeto_boxes.jpg" 
+                    alt="Cheeto lying on boxes with one leg hanging off." width="200"/>
+                </div>
+                <div class="carousel-slide1">
+                    <img src="images/cheeto_attack.jpg" 
+                    alt="Cheeto attacking a hand trying to pet him." width="200"/>
+                </div>
+                <button class="carousel-button carousel-prev1">&#8249;</button>
+                <button class="carousel-button carousel-next1">&#8250;</button>
+               <script>
+                    const slides1 = document.querySelectorAll('.carousel-slide1');
+                    let currentSlide1 = 0;
+                
+                     function showSlide1(n) {
+                    slides1[currentSlide1].style.display = 'none';
+                    currentSlide1 = (n + slides1.length) % slides1.length;
+                    slides1[currentSlide1].style.display = 'block';
+                    }
+                
+                 document.querySelector('.carousel-prev').addEventListener('click', () => {
+                    showSlide1(currentSlide1 - 1);
+                    });
+                
+                 document.querySelector('.carousel-next').addEventListener('click', () => {
+                    showSlide1(currentSlide1 + 1);
+                 });
+                
+                 // Automatically transition to the next slide every few seconds
+                    setInterval(() => {
+                    showSlide1(currentSlide1 + 1);
+                 }, 5000); // Change slides every 5 seconds (adjust as needed)
+                </script>
+            </div>
+        </div>
+            <h3>Likes</h3> <ul>
+                <li>Treats</li>
+                <li>Exploring</li>
+                <li>My Dad</li>
+            </ul>
+            <!-- Divya Shankar    -->
+        </div>
+        <div>
+            <h2>Milktea</h2>
+            <div class="pet-info">
+            <img src="images/Main.JPG" 
+            alt="Milktea taking a nap" width="400"/>
+            <p> Milktea is a Scottish fold with a personality of a princess. She loves her veggies and refuses to eat anything dropped on the ground. She makes it clear when she has a demand of any sort by complaining in a loud, distinguished manner. If what she says could be translated, it probably would be, “This is atrocious, the water container has been empty for the 3rd time this week. I want to see the manager.”
+            </p> <p> Despite her cuteness and royalty, she actually suffers from a genetic disorder intentionally brought upon by humans. I highly advise against keeping a Scottish fold because they are in constant pain when they reach around 2 years old. Cartilage accumulates around her paw joints and tail joints and it becomes painful for them to even walk. She is living evidence of human’s cruelty of breeding animals to look pretty while sacrificing the animals’ health.  
+            </p>
+            <h3>Photo Gallery</h3>
+        </div>
+        <div class="photo-gallery">
+            <div class="carousel-container2">
+                <div class="carousel-slide2">
+                    <img src="images/Milktea_comfy.jpg" 
+                    alt="Milktea enjoying a good massage" height= "Milktea_mirror" />
+                </div>
+                <div class="carousel-slide2">
+                    <img src="images/Milktea_laptop.JPG" 
+                    alt="Baby Milktea On Laptop" height= "Milktea_mirror" />  
+                </div>
+                <div class="carousel-slide2">
+                    <img src="images/Milktea_mirror.jpeg" alt="Milktea sighing at mirror" width="200" />
+                </div>
+                <div class="carousel-slide2">
+                    <img src="images/Milktea_catbox.JPG" 
+                    alt="Milktea Catbox position" height= "Milktea_mirror" />
+                </div>
+                <button class="carousel-button carousel-prev2">&#8249;</button>
+                <button class="carousel-button carousel-next2">&#8250;</button>
+               <script>
+                    const slides2 = document.querySelectorAll('.carousel-slide2');
+                    let currentSlide2 = 0;
+                
+                     function showSlide2(n) {
+                    slides2[currentSlide2].style.display = 'none';
+                    currentSlide2 = (n + slides.length) % slides.length;
+                    slides2[currentSlide2].style.display = 'block';
+                    }
+                
+                 document.querySelector('.carousel-prev2').addEventListener('click', () => {
+                    showSlide2(currentSlide2 - 1);
+                    });
+                
+                 document.querySelector('.carousel-next2').addEventListener('click', () => {
+                    showSlide2(currentSlide2 + 1);
+                 });
+                
+                 // Automatically transition to the next slide every few seconds
+                    setInterval(() => {
+                    showSlide2(currentSlide2 + 1);
+                 }, 5000); // Change slides every 5 seconds (adjust as needed)
+                </script>
+            </div>
+        </div>
+            <h3>Likes</h3> <ul>
+                <li>She loves individual corn kernels served on human hands</li>
+                <li>She enjoys sitting royally on suitcases to claim ownership of her humans</li>
+                <li>She prefers to be alone and sit on soft surfaces in her free time</li>
+            </ul>
+            <!-- Olive Ren -->
+        </div>
+        <div>
+            <h2>Dollar</h2>
+            <div class="pet-info">
+            <img src="images/Dollar1.jpeg" 
+            alt="Black, white and brown australian shepherd in a playpen looking up with a food bowl and towels on the side.             " width="400"/>
+            <p> Dollar is a 1 and a half year old Australian shepherd. His favorite games are tug of war and fetch. Sometimes, when he goes out for walks, he will pick up a stick to get his owners to play fetch with him. At night, he likes to cuddle with his owners. He would snuggle up and put his nose on their arm to let them know that he wants pets.
+            </p> <p>  Dollar has a gourmet taste for food. He hates eating kibble and will only eat premium chicken bits with eggs. His favorite snacks are bell peppers, beef bits, and peanut butter. Dollar is incredibly smart and will only do tricks when you present him with snacks. 
+            </p>
+            <h3>Photo Gallery</h3>
+        </div>
+        <div class="photo-gallery">
+            <div class="carousel-container3">
+                <div class="carousel-slide3">
+                    <img src="images/Dollar2.jpeg" alt="Black, white, and brown australian shepherd in a photograph with a certificate in front of him." width="200"/>
+                </div>
+                <div class="carousel-slide3">
+                    <img src="images/Dollar3.jpeg" 
+                    alt="Black, white, and brown australian shepherd laying down on his back, exposing his underside. " width="200"/>  
+                </div>
+                <div class="carousel-slide3">
+                    <img src="images/Dollar4.jpeg" alt="Black, white, and brown australian shepherd laying on the grass with a leash on" width="200"/>
+                </div>
+                <div class="carousel-slide3">
+                    <img src="images/Dollar5.PNG" alt="Black, white, and brown australian shepherd with a shirt tied around his head" width="200"/>
+                </div>
+                <button class="carousel-button carousel-prev3">&#8249;</button>
+                <button class="carousel-button carousel-next3">&#8250;</button>
+               <script>
+                    const slides3 = document.querySelectorAll('.carousel-slide3');
+                    let currentSlide3 = 0;
+                
+                     function showSlide3(n) {
+                    slides3[currentSlide3].style.display = 'none';
+                    currentSlide3 = (n + slides.length) % slides.length;
+                    slides3[currentSlide3].style.display = 'block';
+                    }
+                
+                 document.querySelector('.carousel-prev3').addEventListener('click', () => {
+                    showSlide3(currentSlide3 - 1);
+                    });
+                
+                 document.querySelector('.carousel-next3').addEventListener('click', () => {
+                    showSlide3(currentSlide3 + 1);
+                 });
+                
+                 // Automatically transition to the next slide every few seconds
+                    setInterval(() => {
+                    showSlide3(currentSlide3 + 1);
+                 }, 5000); // Change slides every 5 seconds (adjust as needed)
+                </script>
+            </div>
+        </div>
+            <h3>Likes</h3> <ul>
+                <li>Bacon Bits</li>
+                <li>Taking walks in the park</li>
+                <li>Jumping on the sofa</li>
+            </ul>
+            <!-- Jing Li -->
+        </div>
+        <div>
+            <h2>Biscuit</h2>
+            <div class="pet-info">
+            <img src="images/biscuit1.jpeg" 
+            alt="Shiba inu sitting in front of pond with stones in the background" width="400"/>
+            <p> Biscuit is a 2 year old shiba inu dog. Shiba inus are energetic and playful dogs. Biscuit enjoys running outside in circles and then laying down in the grass in the sun for hours. He also likes going for occasional swims.
+            </p> <p> As energetic as Biscuit is, he also likes to relax. He loves to sleep in his dog bed and watch Netflix with his owners. His favorite treat is apples.
+            </p>
+            <h3>Photo Gallery</h3>
+        </div>
+        <div class="photo-gallery">
+            <div class="carousel-container4">
+                <div class="carousel-slide4">
+                    <img src="images/biscuit2.jpeg" 
+                    alt="Biscuit standing in the sunlight" width="200"/>
+                </div>
+                <div class="carousel-slide4">
+                    <img src="images/biscuit3.jpeg" 
+                    alt="Biscuit smiling for the camera " width="200"/>
+                </div>
+                <div class="carousel-slide4">
+                    <img src="images/biscuit4.jpeg" 
+                    alt="Biscuit standing near the road" width="200"/>
+                </div>
+                <div class="carousel-slide4">
+                    <img src="images/biscuit5.jpeg" 
+                    alt="Biscuit sleeping" width="200"/>
+                </div>
+                <button class="carousel-button carousel-prev4">&#8249;</button>
+                <button class="carousel-button carousel-next4">&#8250;</button>
+               <script>
+                    const slides4 = document.querySelectorAll('.carousel-slide4');
+                    let currentSlide4 = 0;
+                
+                     function showSlide4(n) {
+                    slides4[currentSlide4].style.display = 'none';
+                    currentSlide4 = (n + slides.length) % slides.length;
+                    slides4[currentSlide4].style.display = 'block';
+                    }
+                
+                 document.querySelector('.carousel-prev4').addEventListener('click', () => {
+                    showSlide4(currentSlide4 - 1);
+                    });
+                
+                 document.querySelector('.carousel-next4').addEventListener('click', () => {
+                    showSlide4(currentSlide4 + 1);
+                 });
+                
+                 // Automatically transition to the next slide every few seconds
+                    setInterval(() => {
+                    showSlide4(currentSlide4 + 1);
+                 }, 5000); // Change slides every 5 seconds (adjust as needed)
+                </script>
+            </div>
+        </div>
+            <h3>Likes</h3> <ul>
+                <li>Going for walks</li>
+                <li>Swimming</li>
+                <li>Apples</li>
+            </ul>
+            <!-- Allison Lee -->
+        </div>
+         <div>
+            <h2>Bo</h2>
+            <div class="pet-info"></div>
+            <img width="400" src="images/bo.jpg" alt="Black and white dog sitting on grass.">
+            <p> Bo is a Portuguese Water Dog with black and white fur. His paws are white too, so they always get dirty when outside. He is 12 years old, but he still likes to run around outside a lot. </p>
+            <p>He has an abundance of toys but only likes to play with a couple. He enjoys going on walks and especially on trails in the woods. He has a few dog friends that he likes to go on playdates with as well.
+            </p>
+            <h3>Photo Gallery</h3>
+        </div>
+        <div class="photo-gallery">
+            <div class="carousel-container5">
+                <div class="carousel-slide5">
+                    <img width="200" src="images/bo_walking.jpg" alt="black and white dog walking on grass">
+                </div>
+                <div class="carousel-slide5">
+                    <img width="200" src="images/bo_and_friend.jpg" alt="black and white dog sitting by other black dog">
+                </div>
+                <div class="carousel-slide5">
+                    <img width="200" src="images/bo_plane.jpg" alt="black and white dog in front of airplane">
+                </div>
+                <div class="carousel-slide5">
+                    <img width="200" src="images/bo_chair.jpg" alt="black and white dog sitting on top of chair">
+                </div>
+                <button class="carousel-button carousel-prev5">&#8249;</button>
+                <button class="carousel-button carousel-next5">&#8250;</button>
+               <script>
+                    const slides5 = document.querySelectorAll('.carousel-slide5');
+                    let currentSlide5 = 0;
+                
+                     function showSlide5(n) {
+                    slides5[currentSlide5].style.display = 'none';
+                    currentSlide5 = (n + slides.length) % slides.length;
+                    slides5[currentSlide5].style.display = 'block';
+                    }
+                
+                 document.querySelector('.carousel-prev5').addEventListener('click', () => {
+                    showSlide5(currentSlide5 - 1);
+                    });
+                
+                 document.querySelector('.carousel-next5').addEventListener('click', () => {
+                    showSlide5(currentSlide5 + 1);
+                 });
+                
+                 // Automatically transition to the next slide every few seconds
+                    setInterval(() => {
+                    showSlide5(currentSlide5 + 1);
+                 }, 5000); // Change slides every 5 seconds (adjust as needed)
+                </script>
+            </div>
+        </div>
+            <h3>Likes</h3>
+            <ul>
+                <li>Walks</li>
+                <li>The Sun</li>
+                <li>Treats</li>
+            </ul>
+            <!-- Joseph Schaubroeck -->
+        </div>
+        <div>
+            <h2>Chunky Doll (Chonks)</h2>
+            <div class="pet-info">
+            <img width="400" src="images/chonks.jpg" alt="Furry white and dark brown ragdoll.">
+            <p>Chunky Doll or as he prefers to respond to, Chocks, is a 4-year-old ragdoll. His name was inspired by his breed and looks. As a kitten, he was even chunkier and blended right in with a fluffy white rug we had that he loved playing hide and seek in. He’s a very lazy but playful cat, only playful when he feels like it.</p>
+            <p>He is a pretty but very difficult cat as he is white but hates showers and loves rolling around in the house collecting dust. To get him into a bath we often have to lure him in with fake human treats. And even then he jumps right out of the bath and runs around the whole bathroom making the floors wet. Nevertheless, he’s a very soft, cuddly, and loving cat.</p>
+            <h3>Photo Gallery</h3>
+        </div>
+        <div class="photo-gallery">
+            <div class="carousel-container6">
+                <div class="carousel-slide6">
+                    <img width="200" src="images/chonks_happy.JPG" alt="Younger Chonks being played with">
+                </div>
+                <div class="carousel-slide6">
+                    <img width="200" src="images/chonks_baby.JPG" alt="Baby Chonks on a cat bed">
+                </div>
+                <div class="carousel-slide6">
+                    <img width="200" src="images/chonks_afterbath.JPG" alt="Fluffy, grumpy Chonks after bath time">
+                </div>
+                <div class="carousel-slide6">
+                    <img width="200" src="images/chonks_neutral.JPG" alt="Chonks standing tall fully clean and white">
+                </div>
+                <button class="carousel-button carousel-prev6">&#8249;</button>
+                <button class="carousel-button carousel-next6">&#8250;</button>
+               <script>
+                    const slides6 = document.querySelectorAll('.carousel-slide6');
+                    let currentSlide6 = 0;
+                
+                     function showSlide6(n) {
+                    slides6[currentSlide6].style.display = 'none';
+                    currentSlide6 = (n + slides.length) % slides.length;
+                    slides6[currentSlide6].style.display = 'block';
+                    }
+                
+                 document.querySelector('.carousel-prev6').addEventListener('click', () => {
+                    showSlide6(currentSlide6 - 1);
+                    });
+                
+                 document.querySelector('.carousel-next6').addEventListener('click', () => {
+                    showSlide6(currentSlide6 + 1);
+                 });
+                
+                 // Automatically transition to the next slide every few seconds
+                    setInterval(() => {
+                    showSlide6(currentSlide6 + 1);
+                 }, 5000); // Change slides every 5 seconds (adjust as needed)
+                </script>
+            </div>
+        </div>
+            <h3>Likes</h3>
+            <ul>
+                <li>Human treats</li>
+                <li>Naps</li>
+                <li>Cuddles</li>
+            </ul>
+            <!-- Syeda Shahriah -->
+        </div>
+    </main>
+</body>
+</html>

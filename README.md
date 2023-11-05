@@ -1,1 +1,1 @@
-# tablet_view
+# mobile_view
