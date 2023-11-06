@@ -14,7 +14,26 @@
     <header>
         <h1>Pets</h1>
     </header>
-    <nav>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.hidden');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+    <nav class="tablet-nav">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <ul class="hidden">
+            <li><a href="index.html">Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+    <nav class="normal">
         <ul>
             <li><a href="index.html">Pets</a></li>
             <li><a href="recipes.html">Recipes</a></li>
