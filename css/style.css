@@ -43,7 +43,7 @@ h2 {
     font-variant: small-caps;
     font-style: bold;
 }
-
+@media (min-width: 480px) {
 nav ul {
     list-style: none;
     padding: 20px;
@@ -58,12 +58,14 @@ nav ul li {
     padding: 5px;
     border-radius: 5px;
 }
+}
 
 main {
     padding: 10px;
 }
 
 /* Make images responsive */
+@media (min-width: 480px) {
 img {
     max-width: 100%;
     height: auto;
@@ -73,6 +75,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   
+}
 }
 
 /* Style for pet descriptions */
@@ -112,6 +115,7 @@ ol {
     font-family: 'Gill Sans', sans-serif;
 
 }
+@media (min-width: 480px) {
 nav ul {
     
     background-color: #375f62;
@@ -126,7 +130,7 @@ nav ul li a:hover {
     transition: background-color 0.3s;
     
 }
-
+}
 /* Create animated buttons */
 button {
     background-color: #4CAF50;
@@ -158,6 +162,7 @@ button:hover {
 }
 
 /* Styles for the photo gallery */
+@media (min-width: 480px) {
 .photo-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -183,7 +188,7 @@ button:hover {
     display: none;
     width: 100%;
 }
-
+}
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -465,3 +470,58 @@ p {
     font-size: smaller;
     
  }
+ 
+@media (min-width: 768px) {
+    .tablet-nav {
+        background-color: #f3f3f3;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+    
+    /* Hide the navigation items by default */
+    .hidden {
+        display: none;
+    }
+   .normal {
+    display: none
+   }
+    .tablet-nav {
+        justify-content: flex-end;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Display the navigation items */
+    .hidden {
+        display: block;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        font-size: large;
+    }
+    .carousel-container{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
