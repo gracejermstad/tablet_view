@@ -9,32 +9,38 @@
     <link rel="stylesheet" href = "css/style.css"> 
     <title>Recipes</title>
 </head>
+<header>
+    <h1>Recipes</h1>
+</header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Top Navigation Menu -->
+<div class="topnav">
+<a href="#home" class="active"></a>
+<!-- Navigation links (hidden by default) -->
+<div id="myLinks">
+<li><a href="index.html">Pets</a></li>
+<li><a href="recipes.html">Recipes</a></li>
+<li><a href="travel.html">Travel</a></li>
+</div>
+<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
+</div>
+<script>
+function myFunction() {
+var x = document.getElementById("myLinks");
+if (x.style.display === "block") {
+x.style.display = "none";
+} else {
+x.style.display = "block";
+}
+}
+</script>
 <body>
     <div class="skip">
     <a href = "">Skip to Main Content</a>
     </div>
-    <header>
-        <h1>Recipes</h1>
-    </header>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.hidden');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
-    <nav class="tablet-nav">
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        
-        <ul class="hidden">
-            <li><a href="index.html">Pets</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="travel.html">Travel</a></li>
-        </ul>
-    </nav>
     <nav class="normal">
         <ul>
             <li><a href="index.html">Pets</a></li>
@@ -42,6 +48,7 @@
             <li><a href="travel.html">Travel</a></li>
         </ul>
     </nav>
+
     <main>
         <div>
             <h1>Spicy Fried Chicken Sandwich Recipe</h1>
